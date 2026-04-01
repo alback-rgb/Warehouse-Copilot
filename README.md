@@ -1,53 +1,50 @@
-Warehouse AI Copilot
+# Warehouse AI Copilot
+Warehouse AI Copilot is an AI-powered tool for evaluating warehouse layouts before acquisition or operational planning.
+The system analyzes warehouse layout images or PDFs and combines visual analysis with operational parameters to assess whether a facility can support a given fulfillment workload.
+It identifies potential operational bottlenecks, evaluates picking and packing efficiency, and provides practical recommendations for improving warehouse operations.
 
-AI-powered tool for evaluating warehouse layouts before acquisition or operational planning.
 
-This application analyzes warehouse layout images or PDFs and combines visual analysis with operational parameters to assess whether the facility can support a given fulfillment workload.
+## Features
+- Warehouse layout analysis from images or PDFs
+- Identification of key operational areas:
+  - shelving storage zones
+  - picking aisles
+  - packing stations
+  - receiving areas
+  - shipping docks
+- Operational analysis based on user inputs:
+  - warehouse size
+  - orders per day
+  - items per order
+  - workforce size
+- Detection of operational bottlenecks
+- Picking efficiency evaluation
+- Packing capacity assessment
+- Practical improvement suggestions
+- Warehouse suitability score and recommendation
 
-The system helps identify potential bottlenecks, evaluate picking and packing efficiency, and provide practical recommendations for improving warehouse operations.
 
-Features:
-Warehouse layout analysis from images or PDFs
-Identification of key operational areas:
-shelving storage zones
-picking aisles
-packing stations
-receiving areas
-shipping docks
-Operational analysis based on:
-warehouse size
-order volume
-items per order
-workforce size
-Detection of potential operational bottlenecks
-Picking and packing efficiency evaluation
-Practical improvement suggestions
-Warehouse suitability score and recommendation
+## How It Works
+1. Upload a warehouse layout (image or PDF).
+2. The system analyzes the visual layout structure using an AI vision model.
+3. The user provides operational parameters such as order volume and workforce size.
+4. The system evaluates whether the warehouse layout can support the required throughput and highlights potential risks or improvements.
 
-How It Works:
-Upload a warehouse layout (image or PDF).
-The AI analyzes the layout structure and workflow.
-The user provides operational parameters.
-The system evaluates whether the warehouse can support the required throughput.
 
-The analysis includes:
-estimated operational capacity
-bottlenecks in picking or packing
-picking efficiency observations
-packing station capacity
-improvement suggestions
-warehouse suitability score
-🛠 Tech Stack
-Python
-Streamlit
-OpenAI API
-PyMuPDF
-Pillow
+## Technology Stack
+- Python
+- Streamlit
+- OpenAI API
+- PyMuPDF
+- Pillow
 
-Project Structure:
-warehouse-ai-copilot
+
+## Project Structure
+warehouse-ai-copilot/
+
 data/
 sample_layouts/
+
 src/
 app.py
 vision.py
@@ -58,12 +55,12 @@ utils.py
 requirements.txt
 README.md
 
+## Example Use Case
+A logistics or operations team evaluating a potential warehouse facility can upload the proposed layout and provide operational parameters such as order volume and workforce size.
+The system analyzes the layout and provides insights into whether the facility can realistically support the expected fulfillment operations.
 
-Example Use Case:
-A logistics team evaluating a new warehouse facility can upload the proposed layout and input operational parameters such as order volume and workforce size.
-The system analyzes the layout and provides insights into whether the warehouse design can realistically support the required fulfillment operations.
 
-Disclaimer
+## Disclaimer
 This tool provides AI-assisted operational insights and should be used as a decision-support system rather than a definitive operational assessment.
 
-This project was built for a private client in the logistics field.
+This tool was built for a private client in the logistics field.
